@@ -1,0 +1,19 @@
+
+   There are three MONK's problems.  The domains for all MONK's problems
+   are the same (described below).  One of the MONK's problems has noise
+   added. For each problem, the domain has been partitioned into a train
+   and test set.
+
+5. Number of Instances: 432
+
+6. Number of Attributes: 8 (including class attribute)
+
+7. Attribute information:
+    1. class: 0, 1 
+    2. a1:    1, 2, 3
+    3. a2:    1, 2, 3
+    4. a3:    1, 2
+    5. a4:    1, 2, 3
+    6. a5:    1, 2, 3, 4
+    7. a6:    1, 2
+    8. Id:    (A unique symbol for each instance)

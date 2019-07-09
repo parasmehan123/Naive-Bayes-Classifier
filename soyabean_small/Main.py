@@ -1,0 +1,79 @@
+import pandas as pd
+import numpy as np
+from copy import deepcopy as dp
+
+d1=pd.read_csv('data',sep=',',header=None).to_numpy()
+
+def pred(x,y):
+    xt=x.transpose()
+    d1={}
+    for i in range(len(xt)-1):
+        d1[i]={}
+        for j in xt[i]:
+            if j not in d1[i].keys():
+                d1[i][j]=0
+             
+    d2=dp(d1)
+    d3=dp(d1)
+    d4=dp(d1)
+    c=[0,0,0,0]
+    for i in x:
+        if i[-1]=='D1':
+            c[0]+=1
+            for j in range(len(i)-1):
+                #print(j,i[j])
+                d1[j][i[j]]+=1
+                
+        elif i[-1]=='D2':
+            c[1]+=1
+            for j in range(len(i)-1):
+                d2[j][i[j]]+=1
+                
+        elif i[-1]=='D3':
+            c[2]+=1
+            for j in range(len(i)-1):
+                d3[j][i[j]]+=1
+                
+        elif i[-1]=='D4':
+            c[3]+=1
+            for j in range(len(i)-1):
+                d4[j][i[j]]+=1
+    for i in d1.keys():
+        for j in d1[i].keys():
+            d1[i][j]=d1[i][j]/c[0]
+            
+    for i in d2.keys():
+        for j in d2[i].keys():
+            d2[i][j]=d2[i][j]/c[1]
+            
+    for i in d3.keys():
+        for j in d3[i].keys():
+            d3[i][j]=d3[i][j]/c[2]
+            
+    for i in d4.keys():
+        for j in d4[i].keys():
+            d4[i][j]=d4[i][j]/c[3]
+    
+    p=[1,1,1,1]
+    for i in range(len(y)-1):
+        p[0]*=d1[i][y[i]]
+        p[1]*=d2[i][y[i]]
+        p[2]*=d3[i][y[i]]
+        p[3]*=d4[i][y[i]]
+    z=p.index(max(p))
+    if z==0:
+        return 'D1'
+    elif z==1:
+        return 'D2'
+    elif z==2:
+        return 'D3'
+    else:
+        return 'D4'
+    
+ac=0
+for i in range(len(d1)):
+    if d1[i][-1]==pred(np.vstack((d1[:i],d1[i+1:])),d1[i]):
+        ac+=1
+
+file=open('../Answers.txt','a')
+file.write("\nSoyabean Small :"+str(ac/len(d1)))

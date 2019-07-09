@@ -1,0 +1,28 @@
+. Number of Instances: 15
+
+6. Number of Attributes: 7 (including the class attribute)
+
+7. Attribute Information:
+    1. Class: noauto, auto
+       -- that is, advise using manual/automatic control
+    2. STABILITY: stab, xstab
+    3. ERROR: XL, LX, MM, SS
+    4. SIGN: pp, nn
+    5. WIND: head, tail
+    6. MAGNITUDE: Low, Medium, Strong, OutOfRange
+    7. VISIBILITY: yes, no
+
+8. Missing Attribute Values:
+   -- none
+   -- but several "don't care" values: (denoted by "*")
+         Attribute Number:   Number of Don't Care Values:
+                        2:   2
+                        3:   3
+                        4:   8
+                        5:   8
+                        6:   5
+                        7:   0
+
+9. Class Distribution:
+    1. Use noauto control: 6
+    2. Use automatic control: 9

@@ -1,0 +1,17 @@
+    
+5. Number of Instances: 47
+
+6. Number of Attributes: 35 (all have been nominalized)
+     -- All attributes here appear with numeric values
+ 
+7. Attribute Information: 
+     -- derivable from soybean-large.names
+
+8. Number of Missing Attribute Values: 0
+
+9. Class Distribution: 
+   1. D1: 10
+   2. D2: 10
+   3. D3: 10
+   4. D4: 17
+
