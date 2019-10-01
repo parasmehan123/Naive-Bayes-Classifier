@@ -9,7 +9,7 @@
 * Answers.txt : File which reports the accuracy of the classifier.
 
 ## Abstract of The Project
-* Implemented a naive bayes classifier for 5 different data sets.
+* Implemented a naive bayes classifier for 5 different data sets. Not using inbuilt libraries but instead highlighting the math behind the classifier
 * All the data set folders contains data contains following :
 * Main.py : Python3 script which implements naive bayes classifier and writes the accuracy to “Answers.txt”.
 * data : Data points .(Some contain multiple data files). 
