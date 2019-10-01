@@ -1,28 +1,29 @@
 import pandas as pd
 import numpy as np
+import csv
 
 data=pd.read_csv('data_train',header=None).to_numpy()
-c0=[0 for _ in range(23)]
-c1=[0 for _ in range(23)]
-c3=0 #counts the number of 1 in 1st coulumn
+count0=[0 for _ in range(23)]
+count1=[0 for _ in range(23)]
+count3=0
 
 for i in data:
     if i[0]==1:
-        c3+=1
+        count3+=1
         for j in range(1,len(i)):
             if i[j]==1:
-                c1[j]+=1
+                count1[j]+=1
 
     else:
         for j in range(1,len(i)):
             if i[j]==0:
-                c0[j]+=1
+                count0[j]+=1
                 d={}
 
-p=c3/(len(data))
+p=count3/(len(data))
 d[0]=p
 for i in range(1,23):
-    d[i]=[c0[i]/c3,c1[i]/c3]
+    d[i]=[count0[i]/count3,count1[i]/count3]
 
 def pred(x):
     global d
