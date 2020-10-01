@@ -10,7 +10,7 @@
 
 ## Abstract of The Project
 * Implemented a naive bayes classifier for 5 different data sets. Not using inbuilt libraries but instead highlighting the math behind the classifier
-* All the data set folders contains data contains following :
+* All the data set folders contains data contains following :-
 * Main.py : Python3 script which implements naive bayes classifier and writes the accuracy to “Answers.txt”.
 * data : Data points .(Some contain multiple data files). 
   * In Spect Heart set and Monk set we have been given data set and test data, in which we can test.
