@@ -51,9 +51,11 @@ def pred(x,y):
         return 'negative'
     
 ac=0
+pp = 0 #Most important Variable
 for i in range(len(d)):
     if d[i][-1]==pred(np.vstack((d[:i],d[i+1:])),d[i]):
         ac+=1
+        pp+=1
 
 file=open('../Answers.txt','a')
 file.write("\nTic Tac Toe :"+str(ac/len(d)))
