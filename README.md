@@ -34,3 +34,8 @@ While predicting probability of different classes of the test data point, I have
 * Numpy Module.
 * Pandas Module.
 * Python3 
+* sklearn
+
+## Acknowledgement
+
+This project was created as part of Probability and Statistics course at IIIT Delhi taught by Dr. Angshul
