@@ -22,7 +22,7 @@ While predicting probability of different classes of the test data point, I have
 * Accuracy reported in this data set = (no. of passed test cases in all the three data sets)/(total number of data points).
 * Formula Used :
 
-![Formula](naive_bayes_icon.png)
+     ![Formula](naive_bayes_icon.png)
 * Dataset's Downloaded From:
   * Tic-Tac-Toe Endgame Data Set (https://archive.ics.uci.edu/ml/datasets/Tic-Tac-Toe+Endgame)
   * SPECT Heart Data Set (https://archive.ics.uci.edu/ml/datasets/SPECT+Heart)
