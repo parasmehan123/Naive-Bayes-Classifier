@@ -21,7 +21,8 @@ While calculating probabilities of different features,  I did not considered don
 While predicting probability of different classes of the test data point, I have taken probability of don't care as 1, as don't care can be any feature 
 * Accuracy reported in this data set = (no. of passed test cases in all the three data sets)/(total number of data points).
 * Formula Used :
-![Formula](naive_bayes_icon.png)
+
+     ![Formula](naive_bayes_icon.png)
 * Dataset's Downloaded From:
   * Tic-Tac-Toe Endgame Data Set (https://archive.ics.uci.edu/ml/datasets/Tic-Tac-Toe+Endgame)
   * SPECT Heart Data Set (https://archive.ics.uci.edu/ml/datasets/SPECT+Heart)
@@ -33,3 +34,8 @@ While predicting probability of different classes of the test data point, I have
 * Numpy Module.
 * Pandas Module.
 * Python3 
+* sklearn
+
+## Acknowledgement
+
+This project was created as part of Probability and Statistics course at IIIT Delhi taught by Dr. Angshul
